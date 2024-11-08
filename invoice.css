@@ -1,0 +1,162 @@
+	* 		{	margin: 0; padding: 0; box-sizing: border-box; font-weight: 400; }
+	body 	{
+		font-size: 100%;
+		font-family: sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		/*		background: #ccc;*/
+	}
+
+	header, footer {
+		display: flex;
+		width: 100%;
+/*		background: pink;*/
+	}
+	header {
+		border-bottom: 3px solid #aaa;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-direction: column;
+		padding-bottom: 1rem;
+		height: 116px;
+		position: relative;
+	}
+	header img {
+		width: 250px;
+		height: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	footer {
+		border-top: 3px solid #aaa;
+		padding-top: 1rem;
+		height: 40px;
+	}
+	section {
+		height: calc(100vh - 156px - 1in);
+		padding-top: 0.35in;
+		position: relative;
+	}
+	.container {
+		width: 670px; /*8.5in;*/
+		height: auto; /*200px;  11in;*/
+		margin-left: auto;
+		margin-right: auto;
+		background: #fff;
+		overflow: hidden;
+		padding: 0.4in 0 0.6in;
+	}
+
+	h1,
+	h3,
+	section > .total > div:last-child {
+		font-size: 1.2rem;
+	}
+
+	h1, h3, section > .total {
+	/*		font-family: "Courier New";*/
+	}
+
+	p {
+		font-size: 0.7rem;
+		line-height: 1.6;
+	}
+
+	header p {
+		margin-bottom: 1rem;
+	}
+
+	footer h3 {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	footer h3 span:last-child,
+	.account-info > div:first-child {
+		color: dodgerblue;
+	}
+
+	section > div:not(.account-info, .service-case),
+	section > div.service-case > div.service-rack {
+		display: grid;
+		grid-template-columns: 5fr 1fr 1fr 1fr;
+	}
+
+	section > .header {
+		font-size: 0.7rem;
+	}
+	section > div.service-case > .service-rack > div {
+		font-size: 0.9rem;
+	}
+
+	section > .header > div,
+	section > div.service-case > .service-rack > div,
+	section > .total > div,
+	section > .account-info > div {
+		padding: 0.6rem 0.8rem;
+	}
+
+	section > .header {
+		border-bottom: 2px solid #ddd;
+		margin-bottom: 2rem;
+	}
+	section > div.service-case > .service-rack > div:nth-child(2),
+	section > div.service-case > .service-rack > div:nth-child(3),
+	section > div.service-case > .service-rack > div:nth-child(4),
+	section > .total > div:nth-child(1) {
+		border-left: 2px solid #ddd;
+		border-bottom: 2px solid #ddd;
+	}
+	section > .total > div:nth-child(2) {
+		border-bottom: 2px solid #ddd;
+	}
+	section > .header > div:nth-child(2),
+	section > .header > div:nth-child(3),
+	section > .header > div:nth-child(4),
+	section > div.service-case > .service-rack > div:nth-child(2),
+	section > div.service-case > .service-rack > div:nth-child(3),
+	section > div.service-case > .service-rack > div:nth-child(4),
+	section > .total > div:nth-child(1),
+	section > .total > div:nth-child(2) {
+		text-align: right;
+	}
+
+	section > .total {
+		width: 100%;
+		position: absolute;
+		bottom: 64px;
+	}
+
+	section > .account-info {
+
+		position: absolute;
+		bottom: 64px;
+		width: 35%;
+		font-size: 0.9rem;
+
+		> div {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 0.2rem;
+			padding-bottom: 0.2rem;
+
+			&:first-child {
+				font-weight: 600;
+				text-transform: lowercase;
+				font-size: 0.7rem;
+			}
+
+			&:not(:first-child) {
+				font-family: 'Courier New';
+			}
+		}
+	}
+
+	.total > div:nth-child(1) {
+		grid-column: 2 / 4;
+	}
+	.total > div:nth-child(2) {
+		grid-column: 4 / 5;
+	}
