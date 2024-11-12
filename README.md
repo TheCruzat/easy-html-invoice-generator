@@ -8,6 +8,7 @@ I began by translating the layout into an HTML/CSS structure, with the idea bein
 
 ## Overview
 
+First, download the fileset, this is something you will be working on locally on your machine (no live hosting required).  
 There are five files in the application:
 ```
 invoice.css			// styles for layout
