@@ -96,15 +96,17 @@ Finally, there's an option to hide the direct deposit info -- it's commented out
 
 <br>
 
-### Easy peasy
+## Easy peasy
 
 With all changes to `invoice.settings.js` and `invoice.js` saved, open up `invoice.html` in a browser, and you should see your content rendered in the layout. If it's blank, there's like a syntax error that's borking the JS.
 
 In the browser, `File > Print`, and find the PDF output option -- different browsers do this differently but all the good ones have this option. The pre-populated file name is drawn from the document's Title and should also reflect the content entered.
 
-Hit save, and DONE! You've just created your first Invoice PDF. :tada:
+### Hit save, and DONE! You've just created your first Invoice PDF. :tada:
 
 > It should look something like <a target="_blank" href="https://thecruzat.com/Your%20Name%20Invoice%20ABC-000%20-%20XX-YY-ZZ.pdf">this</a>.
+
+<br>
 
 Once you have the info in settings, the only file you have to edit to create new invoices going forward is `invoice.js`. I would also recommend using GIT / version control, having different branches for different clients makes life a lot easier.
 
@@ -118,6 +120,6 @@ All the styles live in `invoice.css` and the structure is common-sense, theming 
 
 ## Background
 
-Ultimately this is intended to be part of a larger project around time tracking, if you have ideas about how to handle content, please reach out.
+Ultimately this is intended to be part of a larger project around time tracking, if you have ideas about how to securely handle content, please reach out. For the time being, it's a useful standalone gadget.
 
 In 2005, I had just started engineering at a recording studio in Evanston IL, the manager told me "just invoice me" and I felt like a deer in headlights. I wasn't sure what information to include, how to format things, it was new and terrifying. I wanted to offer this little gizmo to the world to help anyone having that same moment to get past the panic to the payday.
